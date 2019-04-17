@@ -4,10 +4,18 @@
   box-sizing: 0;
 }
 
+/*------------------------------
+----pour le body des pages------
+-------------------------------*/
+
 #content, #real {
   background-color: #dadba7;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+/*------------------------------
+----pour le titre---------------
+-------------------------------*/
 
 #content .prout, #real .prout {
     display: flex;
@@ -27,6 +35,9 @@
   letter-spacing: 0.05em;
 }
 
+/*-----------------------------------------
+----pour l'image du film sur content------
+-----------------------------------------*/
 
 #content .media {
   width: 70%;
@@ -34,18 +45,70 @@
   margin: 20px auto;
 }
 
-#content .text-center,  #real .text-center{
+/*------------------------------
+----pour la partie texte------
+-------------------------------*/
+
+#content .text-center, #real .text-center{
   padding: 20px 10%;
   width: 80%;
+}
+
+#content .text-center {
   margin: 20px auto;
 }
 
+#real .text-center {
+  margin-left: 6%;
+}
+
+/*------------------------------
+----pour la partie récap------
+-------------------------------*/
+
+#content .row {
+  margin-left: 6%;
+}
+
+/*----------------------------------
+----pour la video bande annonce------
+-----------------------------------*/
 
 #content iframe {
   margin-top: 10px;
 }
 
+/*----------------------------------------
+----pour la partie CI du réalisateur------
+-----------------------------------------*/
 
-#real .row {
+#real .row{
   margin-top: 20px;
+}
+
+/*------------------------------------
+----pour la galerie des affiches------
+-------------------------------------*/
+
+#real .liens_films{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #c7c3c3;
+    justify-content: space-around;
+    height: 100%;
+    margin-left: 10%;
+}
+#real img{
+    width: 200px;
+    height: 300px;
+    margin: 40px;
+}
+
+#real img:hover{
+    transform: scale(1.2);
+    box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
+    transition: all 0.6s ease-in-out;
 }
