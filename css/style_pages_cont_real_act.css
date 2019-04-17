@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+/*------------------------------
+----pour le body des pages------
+-------------------------------*/
+
+#content, #real, #acteur {
+  background-color: #dadba7;
+}
+
+#content, #real {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#acteur {
+  background-color: #c7c3c3;
+}
+
+/*------------------------------
+----pour le titre---------------
+-------------------------------*/
+
+#content .prout, #real .prout, #acteur .prout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+}
+
+#content .prout, #real .prout {
+  background-color: #474747;
+}
+
+#acteur .prout {
+  background-color: #dadba7;
+}
+
+#content h1, #real h1, #acteur h1{
+  font-family: 'Poiret One', cursive;
+  font-size: 8em;
+  font-weight: 600;
+  word-spacing: 0.4em;
+  letter-spacing: 0.05em;
+}
+
+#content h1, #real h1 {
+  color: #c7c3c3;
+}
+
+#acteur h1{
+  color: #474747;
+}
+
+/*-----------------------------------------
+----pour l'image du film sur content------
+-----------------------------------------*/
+
+#content .media {
+  width: 70%;
+  height: 400px;
+  margin: 20px auto;
+}
+
+/*------------------------------
+----pour la partie texte------
+-------------------------------*/
+
+#content .text-center, #real .text-center, #acteur .text-center {
+  padding: 20px 10%;
+  width: 80%;
+}
+
+#content .text-center {
+  margin: 20px auto;
+}
+
+#real .text-center, #acteur .text-center {
+  margin-left: 6%;
+}
+
+/*------------------------------
+----pour la partie récap------
+-------------------------------*/
+
+#content .row {
+  margin-left: 6%;
+}
+
+/*----------------------------------
+----pour la video bande annonce------
+-----------------------------------*/
+
+#content iframe {
+  margin-top: 10px;
+}
+
+/*----------------------------------------
+----pour la partie CI du réalisateur------
+-----------------------------------------*/
+
+#real .row, #acteur .row {
+  margin-top: 20px;
+}
+
+/*------------------------------------
+----pour la galerie des affiches------
+-------------------------------------*/
+
+#real .liens_films, #acteur .liens_films {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #494343;
+    justify-content: space-around;
+    height: 100%;
+    margin-left: 10%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#real img, #acteur img {
+    width: 200px;
+    height: 300px;
+    margin: 40px;
+    border-radius: 2px;
+}
+
+#real img:hover, #acteur img:hover {
+    transform: scale(1.2);
+    box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
+    transition: all 0.6s ease-in-out;
+}
