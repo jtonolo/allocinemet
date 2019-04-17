@@ -1,0 +1,38 @@
+.header{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+
+.content1{
+    width: 100%;
+    height: 800px;
+    background-color: green;
+}
+
+.trouNormand{
+    width: 100%;
+    height: 200px;
+    background-color: yellow;
+}
+
+.content2{
+    width: 100%;
+    height: 900px;
+    background-color: red;
+}
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+}
+*{
+    width: 100%;
+    height: 100vh;
+}
