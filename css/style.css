@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.jumbotron {
+  max-height: 10%;
+}
+
+.media {
+  width: 70%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.text-center {
+  padding: 20px 10%;
+}
+
+.card {
+  padding: : 20px 5%;
+}

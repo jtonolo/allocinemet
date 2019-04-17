@@ -1,0 +1,26 @@
+#Navbar{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+   width:70%;
+   margin:auto;
+}
+
+#link_nav{
+display:flex;
+   flex-direction: row;
+   margin-left: 3%;
+   padding-top:10px;
+   padding-bottom:10px;
+   background-color:transparent;
+   
+}
+
+#link_nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#link_nav a:hover{
+    color:grey;
+}
