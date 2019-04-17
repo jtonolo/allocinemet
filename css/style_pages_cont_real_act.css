@@ -40,12 +40,13 @@
   background-color: #dadba7;
 }
 
-#content h1, #real h1, #acteur h1{
+#content h1, #real h1, #acteur h1 {
   font-family: 'Poiret One', cursive;
   font-size: 8em;
   font-weight: 600;
   word-spacing: 0.4em;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 #content h1, #real h1 {
@@ -66,6 +67,7 @@
   margin: 20px auto;
 }
 
+
 /*------------------------------
 ----pour la partie texte------
 -------------------------------*/
@@ -81,6 +83,7 @@
 
 #real .text-center, #acteur .text-center {
   margin-left: 6%;
+  margin-top: 20px;
 }
 
 /*------------------------------
@@ -89,6 +92,7 @@
 
 #content .row {
   margin-left: 6%;
+  margin-bottom: 20px;
 }
 
 /*----------------------------------
@@ -96,7 +100,7 @@
 -----------------------------------*/
 
 #content iframe {
-  margin-top: 10px;
+  margin-top: 5%;
 }
 
 /*----------------------------------------
@@ -136,4 +140,51 @@
     -webkit-box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
     transition: all 0.6s ease-in-out;
+}
+
+
+/*----------------------------------
+----------media query----------------
+----------------------------------*/
+
+@media only screen and (max-width: 1199px) {
+  #content iframe {
+    width: 80%;
+    height: 60%;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+    #content iframe {
+      height: 50%;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+  #content h1, #real h1, #acteur h1{
+    font-size: 6em;
+  }
+  #content .row {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30%;
+    }
+  #content iframe {
+      width: 400px;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  #real .liens_films, #acteur .liens_films {
+    margin-left: 2%;
+  }
+#real .text-center, #acteur .text-center {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
 }
