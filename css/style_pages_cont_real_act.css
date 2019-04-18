@@ -84,6 +84,7 @@
 #real .text-center, #acteur .text-center {
   margin-left: 6%;
   margin-top: 20px;
+
 }
 
 /*------------------------------
@@ -91,7 +92,6 @@
 -------------------------------*/
 
 #content .row {
-  margin-left: 6%;
   margin-bottom: 20px;
 }
 
@@ -111,6 +111,11 @@
   margin-top: 20px;
 }
 
+#real .CI, #acteur .CI {
+  margin-bottom: 20px;
+}
+
+
 /*------------------------------------
 ----pour la galerie des affiches------
 -------------------------------------*/
@@ -123,7 +128,7 @@
     justify-content: space-around;
     height: 100%;
     margin-left: 10%;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-bottom: 20px;
 }
 
@@ -131,7 +136,7 @@
     width: 200px;
     height: 300px;
     margin: 40px;
-    border-radius: 2px;
+    border-radius: 25px;
 }
 
 #real img:hover, #acteur img:hover {
@@ -149,33 +154,14 @@
 
 @media only screen and (max-width: 1199px) {
   #content iframe {
-    width: 80%;
-    height: 60%;
     margin-top: 10%;
   }
-}
-
-@media only screen and (max-width: 991px) {
-    #content iframe {
-      height: 50%;
-    }
 }
 
 @media only screen and (max-width: 880px) {
   #content h1, #real h1, #acteur h1{
     font-size: 6em;
   }
-  #content .row {
-      display: flex;
-      flex-direction: column;
-      margin-left: 30%;
-    }
-  #content iframe {
-      width: 400px;
-    }
-
-}
-
 
 @media only screen and (max-width: 767px) {
   #real .liens_films, #acteur .liens_films {
@@ -184,7 +170,4 @@
 #real .text-center, #acteur .text-center {
     width: 90%;
   }
-}
-
-@media only screen and (max-width: 576px) {
 }
