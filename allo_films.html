@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/allo_films.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
 
     <div class="header_films">
         <h1>NOS FILMS</h1>
+        <img class="ligne" src="img/ligne.png">
     </div>
     <div class="row" id="liste_films">
-        <div class="col-lg-3 col-md-4 col-sm-5">
+        <div class="col-lg-2 col-md-4 col-sm-5">
             <div class="menu_films">
                 <ul id="menu-accordeon">
                     <li><a href="#">Action</a>
@@ -50,22 +52,22 @@
                 </ul>
             </div>
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-7">
-            <div class="liens_films">
-                <a href="#"><img class="effect" src="1.jpg" id="action"></a>
-                <a href="#"><img class="test" src="2.jpg" id="science-fiction"></a>
-                <a href="#"><img class="effect" src="3.jpg" id="horreur"></a>
-                <a href="#"><img class="effect" src="4.jpg" id="action"></a>
-                <a href="#"><img class="effect" src="5.jpg" id="science-fiction"></a>
-                <a href="#"><img class="effect" src="6.jpg" id="horreur"></a>
-                <a href="#"><img class="effect" src="7.jpg" id="action"></a>
-                <a href="#"><img class="effect" src="8.jpg" id="science-fiction"></a>
-                <a href="#"><img class="effect" src="9.jpg" id="horreur"></a>
-                <a href="#"><img class="effect" src="10.jpg" id="action"></a>
+        <div class="col-lg-10 col-md-8 col-sm-7">
+            <div class="liens_films fadeInUp animated">
+                <a href="#"><img class="effect " src="img/1.jpg" id="action"></a>
+                <a href="#"><img class="effect " src="img/2.jpg" id="science-fiction"></a>
+                <a href="#"><img class="effect " src="img/3.jpg" id="horreur"></a>
+                <a href="#"><img class="effect " src="img/4.jpg" id="action"></a>
+                <a href="#"><img class="effect " src="img/5.jpg" id="science-fiction"></a>
+                <a href="#"><img class="effect " src="img/6.jpg" id="horreur"></a>
+                <a href="#"><img class="effect " src="img/7.jpg" id="action"></a>
+                <a href="#"><img class="effect " src="img/8.jpg" id="science-fiction"></a>
+                <a href="#"><img class="effect " src="img/9.jpg" id="horreur"></a>
+                <a href="#"><img class="effect " src="img/10.jpg" id="action"></a>
             </div>
         </div>
     </div>
-
+<!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <script>
@@ -76,19 +78,17 @@ function faireQuelqueChose(position_scroll) {
   // faire quelque chose avec la position du scroll
 }
 
-window.addEventListener('scroll', function(e) {
-  derniere_position_de_scroll_connue = window.scrollY;
+window.addEventListener(function(e) {
 
 
-                TweenMax.to('.anim2', 2, {scaleX: 1, delay: 2, height:'100vw', ease: Circ.easeOut });
            //     TweenMax.to('.liens_films', 4, {y: -800, ease: Elastic.easeOut.config(0.5, 0.2) });
 
-                TweenLite.to('.liens_films', 0.8, { ease: Power1.easeOut, y: -800, opacity: 1 });
+                TweenLite.to('.liens_films', 0.8, {delay: 1, ease: Power1.easeOut, y: -800, opacity: 1 });
 
             })
         
         </script>
-        
+        -->
 </body>
 
 </html>

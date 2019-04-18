@@ -9,13 +9,22 @@ body{
     padding: 0;
 }
 
+
 .header_films{
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     min-height: 30vh;
     background-color: #474747;
+    background-image: url('img/ligne.png');
+}
+
+.ligne{
+  margin-top: -10px;
+  height: 30px;
+  width: 1000px;
 }
 
 .header_films h1{
@@ -26,7 +35,6 @@ body{
   font-weight: 600;
   word-spacing: 0.4em;
   letter-spacing: 0.05em;
-  background-image: 'ligne.png';
 
 }
 
@@ -36,21 +44,20 @@ body{
 }
 
 .menu_films{
-  border-radius: 12.5px;
+  border-radius: 15px;
     margin-top: 20px;
     background-color: #494343;
     height: 100%;
 }
 
 .liens_films{
-  border-radius: 12.5px;
-  margin-top: 820px;
+  border-radius: 15px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #c7c3c3;
-    opacity: 0;
 
 }
 
@@ -66,21 +73,13 @@ img{
 
 img:hover{
     transform: scale(1.2);
-    border: 10px solid rgb(129, 129, 129);
-    box-shadow: 2px 10px 178px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 2px 10px 178px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 10px 178px 0px rgba(0,0,0,0.75);
+    border: 5px solid #494343be;
+    box-shadow: 2px 10px 178px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 2px 10px 178px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 2px 10px 178px 0px rgba(255, 255, 255, 0.75);
     transition: all 0.6s ease-in-out;
 }
 
-.test:hover{
-  transform: scale(1.2);
-  border: 10px solid rgb(129, 129, 129);
-  box-shadow: 2px 10px 178px 0px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 2px 10px 178px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 2px 10px 178px 0px rgba(255, 255, 255, 0.75);
-  transition: all 0.6s ease-in-out;
-}
 
 #menu-accordeon {
     padding:0;
