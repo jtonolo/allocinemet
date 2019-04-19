@@ -23,14 +23,19 @@
 ----------------------------------*/
 
 @media only screen and (max-width: 1199px) {
+  #footer .in {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
 
 }
 
-@media only screen and (max-width: 880px) {
-
-
 @media only screen and (max-width: 767px) {
-
+  #footer .in {
+    display: initial;
+  }
 }
 
 @media only screen and (max-width: 576px) {

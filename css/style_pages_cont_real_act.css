@@ -165,8 +165,11 @@
   #content iframe {
     margin-top: 10%;
   }
-  #content .lignes, #real .lignes, #acteur .lignes,{
-    width: 20%;
+}
+
+@media only screen and (max-width: 991px) {
+  #content .ligne, #real .ligne, #acteur .ligne,{
+    display: none;
   }
 }
 
