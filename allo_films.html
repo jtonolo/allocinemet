@@ -13,16 +13,25 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/allo_films.css">
     <link rel="stylesheet" href="css/animate.css">
+    <script src="allo_films.js"></script>
 </head>
 
 <body>
 
     <div class="header_films">
         <h1>NOS FILMS</h1>
-        <img class="ligne" src="img/ligne.png">
+        <div class="ligne">
+        <img class="ligne_g fadeInLeft animated" src="img/ligne_g.png">
+        <img class="ligne_d fadeInRight animated" src="img/ligne_d.png">
+    </div>
+
+    <div class='container'>
+        <div class='carouselContainer'></div>
+    </div>
+
     </div>
     <div class="row" id="liste_films">
-        <div class="col-lg-2 col-md-4 col-sm-5">
+        <div class="col-lg-3 col-md-4 col-sm-5">
             <div class="menu_films">
                 <ul id="menu-accordeon">
                     <li><a href="#">Action</a>
@@ -52,7 +61,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-lg-10 col-md-8 col-sm-7">
+        <div class="col-lg-9 col-md-8 col-sm-7">
             <div class="liens_films fadeInUp animated">
                 <a href="#"><img class="effect " src="img/1.jpg" id="action"></a>
                 <a href="#"><img class="effect " src="img/2.jpg" id="science-fiction"></a>
@@ -67,6 +76,8 @@
             </div>
         </div>
     </div>
+
+
 <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
