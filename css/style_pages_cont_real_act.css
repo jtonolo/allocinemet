@@ -10,6 +10,7 @@
 
 #content, #real, #acteur {
   background-color: #dadba7;
+  padding-bottom: 20px;
 }
 
 #content, #real {
@@ -18,27 +19,21 @@
 
 #acteur {
   background-color: #c7c3c3;
+  border-bottom: 1px solid #474747;
 }
 
 /*------------------------------
 ----pour le titre---------------
 -------------------------------*/
 
-#content .prout, #real .prout, #acteur .prout {
+#content .hoofd, #real .hoofd, #acteur .hoofd {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     min-height: 20vh;
-    flex-direction: column;
-}
-
-#content .prout, #real .prout {
-  background-color: #474747;
-}
-
-#acteur .prout {
-  background-color: #dadba7;
+    background-color: #474747;
 }
 
 #content h1, #real h1, #acteur h1 {
@@ -56,14 +51,19 @@
 }
 
 #acteur h1{
-  color: #474747;
+  color: #dadba7;
+}
+
+#content .lignes, #real .lignes, #acteur .lignes,{
+  flex-direction: row;
+  text-align: center;
 }
 
 #content .ligne, #real .ligne, #acteur .ligne,{
   height: 10%;
-  width: 50%;
-
+  width: 35%;
 }
+
 
 /*-----------------------------------------
 ----pour l'image du film sur content------
@@ -137,10 +137,10 @@
     height: 100%;
     margin-left: 10%;
     border-radius: 15px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-#real img, #acteur img {
+#real .affiche, #acteur .affiche {
     width: 200px;
     height: 300px;
     margin: 40px;
@@ -164,6 +164,9 @@
 @media only screen and (max-width: 1199px) {
   #content iframe {
     margin-top: 10%;
+  }
+  #content .lignes, #real .lignes, #acteur .lignes,{
+    width: 20%;
   }
 }
 
