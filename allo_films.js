@@ -1,3 +1,9 @@
+      
+      $('.m-nav-toggle').click(function(e){
+        e.preventDefault();
+        $('#Navbar').toggleClass('is-open');
+    })
+      
       /********************************** CAROUSEL ***********************************/
       
       
@@ -24,7 +30,7 @@
       }
 
       /********************************** BACK TO TOP ***********************************/
-      
+
 
       document.addEventListener('DOMContentLoaded', function () {
           window.onscroll = function (ev) {
