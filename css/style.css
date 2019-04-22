@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+/*------------------------------
+----pour le body des pages------
+-------------------------------*/
+
+#content, #real {
+  background-color: #dadba7;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*------------------------------
+----pour le titre---------------
+-------------------------------*/
+
+#content .prout, #real .prout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #474747;
+}
+
+#content h1, #real h1{
+  color: #c7c3c3;
+  font-family: 'Poiret One', cursive;
+  font-size: 8em;
+  font-weight: 600;
+  word-spacing: 0.4em;
+  letter-spacing: 0.05em;
+}
+
+/*-----------------------------------------
+----pour l'image du film sur content------
+-----------------------------------------*/
+
+#content .media {
+  width: 70%;
+  height: 400px;
+  margin: 20px auto;
+}
+
+/*------------------------------
+----pour la partie texte------
+-------------------------------*/
+
+#content .text-center, #real .text-center{
+  padding: 20px 10%;
+  width: 80%;
+}
+
+#content .text-center {
+  margin: 20px auto;
+}
+
+#real .text-center {
+  margin-left: 6%;
+}
+
+/*------------------------------
+----pour la partie récap------
+-------------------------------*/
+
+#content .row {
+  margin-left: 6%;
+}
+
+/*----------------------------------
+----pour la video bande annonce------
+-----------------------------------*/
+
+#content iframe {
+  margin-top: 10px;
+}
+
+/*----------------------------------------
+----pour la partie CI du réalisateur------
+-----------------------------------------*/
+
+#real .row{
+  margin-top: 20px;
+}
+
+/*------------------------------------
+----pour la galerie des affiches------
+-------------------------------------*/
+
+#real .liens_films{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #c7c3c3;
+    justify-content: space-around;
+    height: 100%;
+    margin-left: 10%;
+}
+#real img{
+    width: 200px;
+    height: 300px;
+    margin: 40px;
+}
+
+#real img:hover{
+    transform: scale(1.2);
+    box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 58px -3px rgba(0,0,0,0.75);
+    transition: all 0.6s ease-in-out;
+}
+
+/********************************** BACK TO TOP ***********************************/
+
+a#cRetour {
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background: #474747;
+  position: fixed;
+  right: 20px;
+  opacity: 1;
+  z-index: 99999;
+  transition: all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+a#cRetour:before {
+  content: "\25b2";
+}
+
+a#cRetour:hover {
+  background: rgba(0, 0, 0, 1);
+  transition: all ease-in 0.2s;
+}
+
+a#cRetour.cInvisible {
+  bottom: -35px;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+}
+
+a#cRetour.cVisible {
+  bottom: 20px;
+  opacity: 1;
+}
