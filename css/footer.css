@@ -10,6 +10,7 @@
 #footer {
   background-color: #c7c3c3;
   font-family: 'Roboto Condensed', sans-serif;
+  border-top: solid 5px #474747;
 }
 
 #footer a {

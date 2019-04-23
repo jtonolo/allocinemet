@@ -22,14 +22,29 @@
 </head>
 
 <body>
-  <header>
-  </header>
+    <!--//////////////////////////////  NAVBAR  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+    <header id="haut">
+        <nav class="fixed-top" id="link_nav">
+            <a href="index.thml" id="logo">ALLOCINE<strong>MET</strong></a>
+            <div id="Navbar">
+                <a class="liens" href="allo_films.html">FILMS </a>
+                <a class="liens"href="contact.html">CONTACT </a>
+                <a class="liens"href="acteur.html">ACTEURS </a>
+                <a class="liens"href="realisateur.html">REALISATEURS </a>
+            </div>
+            <div class="m-nav-toggle">
+                <span class="m-toggle-icon"></span>
+            </div>
+        </nav>
+    </header>
+
 
   <main id="acteur">
 
         <!--  pour le titre -->
         <div class="hoofd">
-          <h1 class="text-uppercase">Titre du film</h1>
+          <h1 class="text-uppercase">Nom de l'acteur</h1>
           <div class="fleches_2">
           <img class="fleche_g animated fadeInLeft" src="img/ligne_g.png">
           <img class="fleche_d animated fadeInRight" src="img/ligne_d.png">
@@ -254,10 +269,39 @@
 
       </footer>
 
+      <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+
+      $('.m-nav-toggle').click(function(e){
+        e.preventDefault();
+        $('#Navbar').toggleClass('is-open');
+    })
+
+document.addEventListener('DOMContentLoaded', function () {
+    window.onscroll = function (ev) {
+        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" :
+            "cInvisible";
+    };
+});
+
+$('#sidebarCollapse').click(function (e) {
+    e.preventDefault();
+    $('#sidebar').toggleClass('active');
+})
+
+function openModal() {
+    document.getElementById("modal").style.top = "0px";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.top = "-780px";
+}</script>
 
 </body>
 </html>
